@@ -98,6 +98,7 @@ body {
     justify-content: space-between;
     /* Vertically center the content */
     position: relative;
+    background-color: #C1CAD6;
 }
 
 .card-content {
