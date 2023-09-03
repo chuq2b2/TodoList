@@ -1,5 +1,6 @@
 # Todo List Application
-  ![image](https://github.com/chuq2b2/TodoList/assets/98863661/eb9701f6-f59d-4fcc-afad-33398165b128)
+  ![image](https://github.com/chuq2b2/TodoList/assets/98863661/04da05fa-3358-4bb3-a40b-b2753f9f8533)
+
 ## Description
 
 The Todo List Application is a web-based task management tool designed to help users organize their tasks and keep track of their daily activities. This project leverages modern web technologies, primarily React for the front-end user interface and CSS for styling.
