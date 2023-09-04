@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import "./styles.css"
 import { NewToDoForm } from "./NewToDoForm"
 import { TodoList } from "./TodoList"
+import { EditTask } from "./EditTask"
 
 export default function App() {
   
@@ -42,11 +43,16 @@ export default function App() {
       return currentTodos.filter(todo => todo.id !== id)
     })
   }
+
+  function handleSaveEdit(taskId, newTitle) {
+    console.log(`Task ID: ${taskId}, New Title: ${newTitle}`);
+  }
+
   return (
     <>
       <NewToDoForm onSubmit={addTodo} />
       <h1 className="header">Todo List</h1>
-      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo}/>
+      <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} onSaveEdit={handleSaveEdit} />
     </>
   )
 }
